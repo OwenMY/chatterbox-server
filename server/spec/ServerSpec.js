@@ -8,7 +8,7 @@ describe('Node Server Request Listener Function', function() {
     // but we want to test our function's behavior totally independent of the server code
     var req = new stubs.request('/classes/messages', 'GET');
     var res = new stubs.response();
-
+    debugger;
     handler.requestHandler(req, res);
 
     expect(res._responseCode).to.equal(200);
@@ -68,6 +68,7 @@ describe('Node Server Request Listener Function', function() {
     expect(res._responseCode).to.equal(201);
 
     // Now if we request the log for that room the message we posted should be there:
+    debugger;
     req = new stubs.request('/classes/messages', 'GET');
     res = new stubs.response();
 

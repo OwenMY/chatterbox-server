@@ -9,23 +9,22 @@
     "node": ">=14.15.0"
   },
   "dependencies": {
-    "chai": "^4.2.0",
-    "jquery": "^3.5.1",
-    "mocha": "^5.2.0",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.15",
     "sinon": "^6.3.5",
-    "underscore": "^1.11.0"
+    "underscore": "^1.13.2"
   },
   "scripts": {
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
-    "start:server": "node server/basic-server.js",
+    "start:server": "nodemon server/basic-server.js",
     "start:client": "npx live-server",
     "test": "mocha server/spec",
     "lint": "eslint ./"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
+    "chai": "^4.3.6",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
-    "mocha": "^8.2.1",
+    "mocha": "^8.4.0",
     "request": "^2.88.2"
   }
 }
